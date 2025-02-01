@@ -614,7 +614,8 @@ body {
 }
 .promo__slide-icon {
   max-width: 3.125rem;
-  width: 100%
+  width: 100%;
+  margin-bottom: .3125rem
 }
 .promo__slide-icon img {
   width: 100%;
@@ -1397,6 +1398,9 @@ body {
   }
   .latest-news__article {
     grid-template-columns: 7.5rem 1fr
+  }
+  .latest-news__article--big {
+    grid-template-columns: 1fr
   }
   .latest-news__article--big .latest-news__article-title {
     font-size: 1.125rem;
