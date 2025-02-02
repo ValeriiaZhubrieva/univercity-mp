@@ -604,9 +604,7 @@ body {
   background-color: var(--dark-blue);
   color: var(--white);
   padding: 1.5rem;
-  transition: background,.3s,color .3s,-webkit-transform .3s;
-  transition: transform .3s,background,.3s,color .3s;
-  transition: transform .3s,background,.3s,color .3s,-webkit-transform .3s
+  transition: background,.3s,color .3s
 }
 .promo__slide-icon {
   max-width: 3.125rem;
@@ -1487,8 +1485,6 @@ body {
     border-color: #4caee5
   }
   .promo__slide:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
     background-color: var(--white);
     color: var(--dark-grey)
   }
