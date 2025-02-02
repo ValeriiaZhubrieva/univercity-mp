@@ -604,23 +604,30 @@ body {
   background-color: var(--dark-blue);
   color: var(--white);
   padding: 1.5rem;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s,-webkit-transform .3s
-}
-.promo__slide--white {
-  background-color: var(--white);
-  color: var(--dark-grey)
+  transition: background,.3s,color .3s,-webkit-transform .3s;
+  transition: transform .3s,background,.3s,color .3s;
+  transition: transform .3s,background,.3s,color .3s,-webkit-transform .3s
 }
 .promo__slide-icon {
   max-width: 3.125rem;
   width: 100%;
-  margin-bottom: .3125rem
+  margin-bottom: .3125rem;
+  display: grid;
+  grid-template-areas: "icon"
 }
 .promo__slide-icon img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover
+  object-fit: cover;
+  transition: opacity .3s
+}
+.promo__slide-icon--dark,
+.promo__slide-icon--white {
+  grid-area: icon
+}
+.promo__slide-icon--dark {
+  opacity: 0;
+  visibility: hidden
 }
 .promo__slide-value {
   font-weight: 700;
@@ -1481,7 +1488,17 @@ body {
   }
   .promo__slide:hover {
     -webkit-transform: scale(1.05);
-    transform: scale(1.05)
+    transform: scale(1.05);
+    background-color: var(--white);
+    color: var(--dark-grey)
+  }
+  .promo__slide:hover .promo__slide-icon--white {
+    opacity: 0;
+    visibility: hidden
+  }
+  .promo__slide:hover .promo__slide-icon--dark {
+    opacity: 1;
+    visibility: visible
   }
   .aside-menu__title:hover {
     color: var(--dark-blue)
