@@ -122,7 +122,7 @@ body {
   background-color: var(--lightbeige)
 }
 .lock body {
-  overflow: hidden;
+  overflow: hidden !important;
   touch-action: none;
   -ms-scroll-chaining: none;
   overscroll-behavior: none
