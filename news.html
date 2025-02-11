@@ -2,7 +2,7 @@
 <html lang="uk">
 
 <head>
-	<title>HomePage</title>
+	<title>News</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20250210162659">
@@ -154,7 +154,7 @@
 		</script>
 	</div>
 	<div class="wrapper">
-		<header class="header header--absolute">
+		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
 					<button type="button" class="header__burger icon-menu"><span></span></button>
@@ -227,105 +227,16 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="promo" style="background-image: url('img/top-bg.webp');">
-				<div class="promo__container">
-					<div class="promo__body">
-						<div class="promo__subtitle">
-							Міжнародний Технологічний Університет
-						</div>
-						<div class="promo__title">
-							Миколаївська політехніка
-						</div>
-						<div class="promo__text">
-							Реалізація потреб особистості в розвитку її освітнього та професійного потенціалу — головна
-							складова роботи університету.
-						</div>
-						<a href="/" class="promo__btn button">
-							Детальніше
+			<div class="content content--pages">
+				<div class="content__container">
+					<div class="breadcrumbs">
+						<a href="/" class="breadcrumbs__link">
+							Головна
+						</a>
+						<a href="/" class="breadcrumbs__link active">
+							Останні новини
 						</a>
 					</div>
-					<div class="promo__slider swiper">
-						<div class="promo__wrapper swiper-wrapper">
-							<div class="promo__slide swiper-slide">
-								<div class="promo__slide-icon">
-									<img class="promo__slide-icon--white" src="img/icons/university.webp" alt="Image">
-									<img class="promo__slide-icon--dark" src="img/icons/university-dark.webp" alt="Image">
-								</div>
-								<div class="promo__slide-value">
-									1
-								</div>
-								<div class="promo__slide-text">
-									Cучасний вищий навчальний заклад, заснований провідними українськими і міжнародними підприємствами
-								</div>
-							</div>
-							<div class="promo__slide swiper-slide">
-								<div class="promo__slide-icon">
-									<img class="promo__slide-icon--white" src="img/icons/book.webp" alt="Image">
-									<img class="promo__slide-icon--dark" src="img/icons/book-dark.webp" alt="Image">
-								</div>
-								<div class="promo__slide-value">
-									5
-								</div>
-								<div class="promo__slide-text">
-									Cпеціальностей з Державною ліцензією і акредитаційними Сертифікатами на право надання вищої освіти
-								</div>
-							</div>
-							<div class="promo__slide swiper-slide">
-								<div class="promo__slide-icon">
-									<img class="promo__slide-icon--white" src="img/icons/group.webp" alt="Image">
-									<img class="promo__slide-icon--dark" src="img/icons/group-dark.webp" alt="Image">
-								</div>
-								<div class="promo__slide-value">
-									500+
-								</div>
-								<div class="promo__slide-text">
-									студентів денної і заочної форми навчання
-								</div>
-							</div>
-							<div class="promo__slide swiper-slide">
-								<div class="promo__slide-icon">
-									<img class="promo__slide-icon--white" src="img/icons/diploma.webp" alt="Image">
-									<img class="promo__slide-icon--dark" src="img/icons/diploma-dark.webp" alt="Image">
-								</div>
-								<div class="promo__slide-value">
-									2
-								</div>
-								<div class="promo__slide-text">
-									профільних факультети та факультет післядипломної освіти
-								</div>
-							</div>
-							<div class="promo__slide swiper-slide">
-								<div class="promo__slide-icon">
-									<img class="promo__slide-icon--white" src="img/icons/student.webp" alt="Image">
-									<img class="promo__slide-icon--dark" src="img/icons/student-dark.webp" alt="Image">
-								</div>
-								<div class="promo__slide-value">
-									90+
-								</div>
-								<div class="promo__slide-text">
-									відповідальних і креативних Викладачів-науковців
-								</div>
-							</div>
-							<div class="promo__slide swiper-slide">
-								<div class="promo__slide-icon">
-									<img class="promo__slide-icon--white" src="img/icons/student-2.webp" alt="Image">
-									<img class="promo__slide-icon--dark" src="img/icons/student-2-dark.webp" alt="Image">
-								</div>
-								<div class="promo__slide-value">
-									8000+
-								</div>
-								<div class="promo__slide-text">
-									випускників які здійснюють трудову діяльність в організаціях і на підприємствах
-									регіону
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</section>
-			<div class="content">
-				<div class="content__container">
 					<div class="content__body">
 						<aside data-da=".menu__body, 767.98, 1" class="aside-menu">
 							<div data-spollers class="aside-menu__items">
@@ -556,90 +467,86 @@
 							</div>
 						</aside>
 						<div class="content__inner">
-							<section class="content__section latest-news">
-								<div class="latest-news__subtitle title-small">
+							<section class="content__section news-articles">
+								<div class="news-articles__subtitle title-small">
 									про нас
 								</div>
-								<div class="latest-news__body">
-									<div class="latest-news__title title">
-										Останні новини
-									</div>
-									<a href="/" class="latest-news__link link">
-										<span>Усі новини</span>
-										<svg width="16" height="17" viewBox="0 0 16 17" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M3.02148 8.521L13.0215 8.521M9.77148 5.021L13.2715 8.521L9.77148 12.021" />
-										</svg>
-									</a>
-									<article class="latest-news__article latest-news__article--big">
-										<a href="/" class="latest-news__article-img">
+								<div class="news-articles__title title">
+									Останні новини
+								</div>
+								<div class="news-articles__items">
+									<article class="news-articles__item news-card">
+										<div class="news-card__img">
 											<img src="img/news/image-big.webp" alt="Image">
-										</a>
-										<div class="latest-news__article-body">
-											<div class="latest-news__article-date">
+										</div>
+										<div class="news-card__body">
+											<div class="news-card__date">
 												январь 27, 2025
 											</div>
-											<a href="/" class="latest-news__article-title">
+											<a href="/" class="news-card__title">
 												Кожна випускаюча кафедра має договірні відносини з підприємствами.
 											</a>
-											<div class="latest-news__article-text">
+											<div class="news-card__text">
 												Cучасний вищий навчальний заклад, заснований провідними українськими і
 												міжнародними підприємствами
 											</div>
 										</div>
 									</article>
-									<div class="latest-news__items">
-										<article class="latest-news__article">
-											<a href="/" class="latest-news__article-img">
-												<img src="img/news/image-1.webp" alt="Image">
-											</a>
-											<div class="latest-news__article-body">
-												<div class="latest-news__article-date">
-													январь 27, 2025
-												</div>
-												<a href="/" class="latest-news__article-title">
-													Кожна випускаюча кафедра має договірні відносини з підприємствами.
-												</a>
+									<article class="news-articles__item news-card">
+										<div class="news-card__img">
+											<img src="img/news/image-5.webp" alt="Image">
+										</div>
+										<div class="news-card__body">
+											<div class="news-card__date">
+												январь 27, 2025
 											</div>
-										</article>
-										<article class="latest-news__article">
-											<a href="/" class="latest-news__article-img">
-												<img src="img/news/image-2.webp" alt="Image">
+											<a href="/" class="news-card__title">
+												Кожна випускаюча кафедра має договірні відносини з підприємствами.
 											</a>
-											<div class="latest-news__article-body">
-												<div class="latest-news__article-date">
-													январь 27, 2025
-												</div>
-												<a href="/" class="latest-news__article-title">
-													Кожна випускаюча кафедра має договірні відносини з підприємствами.
-												</a>
+											<div class="news-card__text">
+												Cучасний вищий навчальний заклад, заснований провідними українськими і
+												міжнародними підприємствами
 											</div>
-										</article>
-										<article class="latest-news__article">
-											<a href="/" class="latest-news__article-img">
-												<img src="img/news/image-3.webp" alt="Image">
+										</div>
+									</article>
+									<article class="news-articles__item news-card">
+										<div class="news-card__img">
+											<img src="img/news/image-6.webp" alt="Image">
+										</div>
+										<div class="news-card__body">
+											<div class="news-card__date">
+												январь 27, 2025
+											</div>
+											<a href="/" class="news-card__title">
+												Кожна випускаюча кафедра має договірні відносини з підприємствами.
 											</a>
-											<div class="latest-news__article-body">
-												<div class="latest-news__article-date">
-													январь 27, 2025
-												</div>
-												<a href="/" class="latest-news__article-title">
-													Кожна випускаюча кафедра має договірні відносини з підприємствами.
-												</a>
+											<div class="news-card__text">
+												Cучасний вищий навчальний заклад, заснований провідними українськими і
+												міжнародними підприємствами
 											</div>
-										</article>
-										<article class="latest-news__article">
-											<a href="/" class="latest-news__article-img">
-												<img src="img/news/image-4.webp" alt="Image">
+										</div>
+									</article>
+									<article class="news-articles__item news-card">
+										<div class="news-card__img">
+											<img src="img/news/image-7.webp" alt="Image">
+										</div>
+										<div class="news-card__body">
+											<div class="news-card__date">
+												январь 27, 2025
+											</div>
+											<a href="/" class="news-card__title">
+												Кожна випускаюча кафедра має договірні відносини з підприємствами.
 											</a>
-											<div class="latest-news__article-body">
-												<div class="latest-news__article-date">
-													январь 27, 2025
-												</div>
-												<a href="/" class="latest-news__article-title">
-													Кожна випускаюча кафедра має договірні відносини з підприємствами.
-												</a>
+											<div class="news-card__text">
+												Cучасний вищий навчальний заклад, заснований провідними українськими і
+												міжнародними підприємствами
 											</div>
-										</article>
+										</div>
+									</article>
+									<div class="news-articles__load">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20.0007 39.258C30.3909 39.258 39.1673 30.4816 39.1673 20.0913H35.334C35.334 28.4039 28.3132 35.4247 20.0007 35.4247C11.6881 35.4247 4.66732 28.4039 4.66732 20.0913C4.66732 11.7807 11.6881 4.75802 20.0007 4.75802V0.924683C9.6104 0.924683 0.833984 9.70302 0.833984 20.0913C0.833984 30.4816 9.6104 39.258 20.0007 39.258Z" fill="#006197" />
+										</svg>
 									</div>
 								</div>
 							</section>
@@ -683,82 +590,6 @@
 									</div>
 								</div>
 							</section>
-							<section class="content__section about">
-								<div class="about__body">
-									<div class="about__content">
-										<div class="about__subtitle title-small">
-											Про нас
-										</div>
-										<div class="about__title title">
-											УНІВЕРСИТЕТ СЬОГОДНІ
-										</div>
-										<div class="about__text">
-											Місія «МІЖНАРОДНОГО ТЕХНОЛОГІЧНОГО УНІВЕРСИТЕТУ «МИКОЛАЇВСЬКА ПОЛІТЕХНІКА» —
-											задовольняти освітні потреби особистості, суспільства й держави в техніці та
-											технологіях, сприяти соціально-економічному розвитку через підготовку
-											високопрофесійних випускників, наукову й інноваційну діяльність,
-											інтегруючись у світовий освітній простір із фокусом на якість та потреби
-											споживачів.
-										</div>
-										<a href="/" class="about__btn button">
-											Детальніше
-										</a>
-									</div>
-									<div data-da=".about__content, 991.98, 2" class="about__img">
-										<img src="img/about-image.webp" alt="Image">
-									</div>
-								</div>
-							</section>
-							<section class="content__section info">
-								<div class="info__body">
-									<div class="info__head">
-										<div class="info__subtitle title-small">
-											Студенту
-										</div>
-										<div class="info__title title-middle">
-											Твій шлях до успіху починається тут!
-										</div>
-									</div>
-									<div class="info__content">
-										<div class="info__text">
-											Навчайся у сучасному університеті, який відкриває перед тобою безліч
-											можливостей! Отримуй якісну освіту, долучайся до наукових досліджень та
-											користуйся всіма перевагами студентського життя.
-										</div>
-										<div class="info__img">
-											<img src="img/student-image.webp" alt="Image">
-										</div>
-									</div>
-									<a href="/" class="info__link link">
-										<span>Дивитися далі</span>
-										<svg width="16" height="17" viewBox="0 0 16 17" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M3.02148 8.521L13.0215 8.521M9.77148 5.021L13.2715 8.521L9.77148 12.021" />
-										</svg>
-									</a>
-								</div>
-							</section>
-							<div class="line-text">
-								<div class="line-text__items">
-									<div class="line-text__item">
-										Міжнародний Університет
-									</div>
-									<div class="line-text__item">
-										Міжнародний Університет
-									</div>
-									<div class="line-text__item">
-										Міжнародний Університет
-									</div>
-									<div class="line-text__item">
-										Міжнародний Університет
-									</div>
-									<div class="line-text__item">
-										Міжнародний Університет
-									</div>
-									<div class="line-text__item">
-										Міжнародний Університет
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
